@@ -11,8 +11,8 @@ const results = () =>{
 
   let totalGrades = physicsNum + mathsNum + chemistryNum + biologyNum;  // total marks
 
-if (physicsNum == 0 || mathsNum == 0 || chemistryNum == 0 || biologyNum == 0) {
-    alert('please Enter Your marks Then click Submit button')
+if (physics == 0 || maths == 0 || chemistry == 0 || biology == 0) {
+    alert('please Enter Your marks Then click Submit button');
 } else if(physicsNum >=33 && mathsNum >=33 && chemistryNum >= 33 && biologyNum >=33) {
 const showBox = document.getElementById('showBox');
         showBox.style.display ='block';
@@ -57,11 +57,11 @@ const showBox = document.getElementById('showBox');
     document.getElementById('getPercentage').innerText = 'percentage is' + ' ' + percentage + ' %';
     document.getElementById('getGrade').innerText = 'Your grade is' + ' ' + grades;
   }
-  } else{ // else if
+  } else if(physicsNum < 33 && mathsNum < 33 && chemistryNum < 33 && biologyNum < 33){ // else if
     const showBox = document.getElementById('showBox');
     showBox.style.display ='block';
     document.getElementById('getTotal').innerText = 'Out of 400 your total is ' + totalGrades;
     document.getElementById('getPercentage').innerText = 'You are Fail';
     document.getElementById('getGrade').innerText = 'You are Fail';
   } 
-}
+};
