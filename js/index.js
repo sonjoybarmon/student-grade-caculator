@@ -61,6 +61,7 @@ const showBox = document.getElementById('showBox');
   if(physicsNum < 33 || mathsNum < 33 || chemistryNum < 33 || biologyNum < 33){ // else if
     const showBox = document.getElementById('showBox');
     showBox.style.display ='block';
+    document.getElementById('showData').innerHTML =  'You are Fail.';
     document.getElementById('getTotal').innerText = 'Out of 400 your total is ' + totalGrades;
     document.getElementById('getPercentage').innerText = 'You are Fail';
     document.getElementById('getGrade').innerText = 'You are Fail';
