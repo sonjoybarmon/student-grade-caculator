@@ -57,7 +57,8 @@ const showBox = document.getElementById('showBox');
     document.getElementById('getPercentage').innerText = 'percentage is' + ' ' + percentage + ' %';
     document.getElementById('getGrade').innerText = 'Your grade is' + ' ' + grades;
   }
-  } else if(physicsNum < 33 && mathsNum < 33 && chemistryNum < 33 && biologyNum < 33){ // else if
+  } 
+  if(physicsNum < 33 || mathsNum < 33 || chemistryNum < 33 || biologyNum < 33){ // else if
     const showBox = document.getElementById('showBox');
     showBox.style.display ='block';
     document.getElementById('getTotal').innerText = 'Out of 400 your total is ' + totalGrades;
