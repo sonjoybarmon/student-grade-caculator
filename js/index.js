@@ -1,4 +1,4 @@
-const calcy = () =>{
+const results = () =>{
   const physics = document.getElementById('physics').value;
   const maths = document.getElementById('maths').value;
   const chemistry = document.getElementById('chemistry').value;

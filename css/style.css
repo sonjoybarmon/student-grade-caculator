@@ -108,6 +108,7 @@ body, button, input {
   cursor: pointer;
   outline: none;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .app-form-button:hover {
